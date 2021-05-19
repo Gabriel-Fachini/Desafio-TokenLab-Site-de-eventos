@@ -1,0 +1,149 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    font-family: "Poppins";
+    margin: 0;
+    color: #6C63FF;
+    font-size: 20px;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6C63FF;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+img{
+    height: 60%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-container{
+    width: 95%;
+    max-width: 95%;
+    overflow: auto;
+    height: 95%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.calendar-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.calendar-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+.calendar-container::-webkit-scrollbar-thumb {
+    background-color: #929292 ;
+    border-radius: 6px;
+}
+
+.time-container{
+    width: 70px;
+    height: auto;
+}
+
+.margin-corrector{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+time{
+    margin: 0;
+    margin-top: 40px;
+}
+
+#one{
+    margin-top: 55px;
+}
+
+.events-days-container{
+    width: 100%;
+    height: 100%;
+}
+
+.week{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.day{
+    width: 14.2857%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+h3{
+    margin: 0;
+}
+
+.day-text{
+    font-weight: 400;
+}
+
+.events{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.add-button{
+    width: 90px;
+    height: auto;
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.add-button:hover{
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+.add-button:not(:hover){
+    transition: 0.5s;
+    transform: rotate(-90deg);
+}
+
+.events-colum{
+    width: 14.2857%;
+    height: auto;
+}
+
+.hour-cell{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}

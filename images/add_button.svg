@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c63ff;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="539.5" cy="539.5" r="539.5"/>
+  <rect id="Retângulo_1" data-name="Retângulo 1" class="cls-2" x="500" y="115" width="79" height="850"/>
+  <rect id="Retângulo_1_copiar" data-name="Retângulo 1 copiar" class="cls-2" x="115" y="500" width="850" height="79"/>
+</svg>
