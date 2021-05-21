@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar - Cadastre-se</title>
-    <link rel="stylesheet" type = "text/css" href="../style/register.css">
+    <link rel="stylesheet" type = "text/css" href="/css/register.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/icon.png">
 </head>
 <body>
     <main>
@@ -15,30 +16,30 @@
             <h1>Cadastre-se</h1>
         </div>
         <div class="form-container">
-            <form>
+            <form action="/register/send" method="POST">
                 <div class="field">
                     <label>Nome</label><br>
-                    <input type="text" name="nome" placeholder="Insira seu nome" class="input">
+                    <input type="text" name="name" placeholder="Insira seu nome" class="input" required>
                 </div>
     
                 <div class="field">
                     <label>Sobrenome</label><br>
-                    <input type="text" name="sobrenome" placeholder="Insira seu sobrenome" class="input">
+                    <input type="text" name="surname" placeholder="Insira seu sobrenome" class="input" required>
                 </div>
     
                 <div class="field">
                     <label>Email</label><br>
-                    <input type="text" name="email" placeholder="Insira seu email" class="input">
+                    <input type="text" name="email" placeholder="Insira seu email" class="input" required>
                 </div>
     
                 <div class="field">
                     <label>Senha</label><br>
-                    <input type="password" name="senha" placeholder="Insira sua senha" class="input">
+                    <input type="password" name="password" placeholder="Insira sua senha" class="input" required>
                 </div>
     
                 <div class="field">
                     <label>Confirme a senha</label><br>
-                    <input type="password" name="cofirma" placeholder="Digite novamente sua senha" class="input">
+                    <input type="password" name="confirm" placeholder="Digite novamente sua senha" class="input" required>
                 </div>
     
                 <input type="submit" name="cadastrar" value="Confirmar" class="botao">
@@ -46,5 +47,17 @@
             </form>
         </div>
     </main>
+    <script>
+        async function getContent(){
+            try {
+                const response = await fetch('http://localhost:3000');
+                console.log(response);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        getContent();
+    </script>
 </body>
 </html>
